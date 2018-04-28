@@ -1,0 +1,12 @@
+<p>
+    <%=JSON.stringify(user)%><br/><br/>
+
+    Provider: <%= user.source %><br/>
+    ID: <%= user.id %><br/>
+    Username: <%= user.username %><br/>
+    Name: <%= user.shownName %><br/>
+
+    <% if (user.emails) { %>
+        Email: <%= user.emails[0].value %><br/>
+    <% } %>
+</p>
